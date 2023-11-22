@@ -233,7 +233,7 @@ function unuseShader(prog) {
 /////
 var projection = {
     'angle':60,
-    'nearfar':new Float32Array([0.1, 100.0]),
+    'nearfar':new Float32Array([0.1, 60.0]),
     'matrix':Matrix44.createIdentity()
 };
 var camera = {
