@@ -1,0 +1,39 @@
+body {
+    background-color: #ffe0f0;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+	  height: 600px;
+}
+canvas {
+    padding:0;
+    margin:0;
+}
+div.btnbg {
+    box-shadow: 0px 0px 15px #f2a1c2;
+    border: 2px solid #f2c2d6;
+    background-color: #f2c2d6;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+div.btnbg:hover {
+    text-shadow: 2px 2px 4px #ccc;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+@keyframes sakura {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+body {
+    animation: sakura 10s linear infinite;
+    /* その他の既存のスタイル */
+}
